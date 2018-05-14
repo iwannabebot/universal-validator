@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A string validation library for node",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc - watch",
+    "build": "tsc --watch",
     "ci": "npm run lint && npm run test && npm run build",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec",
     "docs": "compodoc -p tsconfig.json -d docs --disableCoverage",
