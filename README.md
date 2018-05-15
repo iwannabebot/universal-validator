@@ -12,7 +12,7 @@ npm install universal-validator --save
 ### Javascript
 ```javascript
 var validator = require('universal-validator');
-console.log(validator.IsNullOrEmpty(' ');
+console.log(validator.IsNullOrEmpty(' '));
 ```
 ```sh
 Output should be true
