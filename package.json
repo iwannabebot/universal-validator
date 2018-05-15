@@ -13,7 +13,7 @@
     "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec",
 
-    "ci": "npm run lint && npm run test && npm run build && npm run cover",
+    "ci": "npm run lint && npm run build && npm run cover",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run ci",
     "preversion": "npm run ci",
