@@ -21,7 +21,7 @@ Output should be true
 ### TypeScript
 ```typescript
 import * as validator from 'universal-validator';
-console.log(validator.IsNullOrEmpty('Goose'))
+console.log(validator.IsNullOrEmpty('Apple'))
 ```
 ```sh
 Output should be false
