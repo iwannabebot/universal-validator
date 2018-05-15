@@ -7,7 +7,6 @@ A string validation library for node
 ## Installation 
 ```sh
 npm install universal-validator --save
-npm install @types/universal-validator --save-dev
 ```
 ## Usage
 ### Javascript
