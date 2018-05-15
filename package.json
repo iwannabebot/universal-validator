@@ -6,18 +6,22 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc --watch",
-    "ci": "npm run lint && npm run test && npm run build",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec",
+    "lint": "tslint --project \"./tsconfig.json\"",
+    "test": "mocha --reporter spec",
+    
     "docs": "typedoc --out docs src",
     "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs",
-    "lint": "npm run tslint",
+
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec",
+
+    "ci": "npm run lint && npm run test && npm run build",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run ci",
     "preversion": "npm run ci",
-    "test": "mocha --reporter spec",
-    "tslint": "tslint --project \"./tsconfig.json\"",
+
     "clean:all": "npm run clean:tmp && rimraf node_modules",
     "clean:tmp": "rimraf dist docs"
+    
   },
   "repository": {
     "type": "git",
