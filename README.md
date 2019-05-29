@@ -1,3 +1,5 @@
+# NOTICE: THIS IS A SAMPLE REPOSITORY FOR A BLOG I WROTE ON MEDIUM.
+
 # universal-validator
 A string validation library for node
 
